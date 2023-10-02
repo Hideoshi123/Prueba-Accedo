@@ -1,0 +1,38 @@
+/* Selector universal que evita problemas entre el estilo predeterminado del navegador y el personalizado */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* El contenedor principal de la tabla o matriz ocupará toda la pantalla y centrará todos sus elementos, tanto vertical como horizontalmente. Los elementos estarán dispuestos uno debajo del otro, manteniendo el mismo espacio entre ellos. */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Ajustamos el tamaño de los inputs para que se vean bien */
+
+input {
+    width: 100%;
+    height: 100%;
+    margin-top: 4px;
+}
+
+/* Elimina los bordes en las celdas de la tabla */
+
+td {
+    border: none;
+}
+
+/* Cambia el cursor cuando pasa sobre los inputs deshabilitados */
+
+input[type="checkbox"]:disabled {
+    cursor: not-allowed;
+}
